@@ -1,0 +1,2305 @@
+<html>
+<style>
+.mBody{
+    width:5cm;
+    height:12.5cm;
+    background-color:black;
+    border-radius:10px;
+    }
+.mBody .frontSpeaker{
+    transform: translate(2cm,0.3cm);
+    width:1cm;
+    height:o.2cm;
+    border:1px solid #fffbbb;
+    border-radius:2px;
+    }
+.mBody .model{
+    color:#ffffff;
+    transform: translate(3.8cm,0.5cm);
+    font-size:0.2cm;
+    }
+.mBody #display{
+    transform:translate(0.55cm,0.5cm);
+    width:3.8cm;
+    height:5cm;
+    background-color:#797979;
+    }
+.mBody .brand{
+    transform:translate(1.57cm,0.7cm);
+    color:#ffffff;
+    font-family:Times New Roman;
+    font-weight:bold;
+    }
+.mBody .centerButton{
+    transform:translate(1.8cm,1cm);
+    width:1.3cm;
+    height:1.3cm;
+    border-radius:0.5cm;
+    border:3px solid #bebebe;
+    box-shadow:3px 3px #444444, -3px -3px #444444;
+    }
+.circle{
+    width:10px;
+    height:10px;
+    background-color:#000000;
+    border-radius:5px;
+    }
+.mBody .button{
+    width:1cm;
+    height:0.5cm;
+    border:1px solid #bebebe;
+    border-radius:3px;
+    color:#ffffff;
+    }
+.sFont{
+    font-size:5px;
+    color:#ffffff;
+    float:right;
+    margin-right:3px;
+    }
+#status{
+    font-size:10px;
+    background-color:#ffffff;
+    visibility:hidden;
+    }
+#urlGo{
+    transform:translate(0px,25px);
+    width:140px;
+    border-radius:10px;
+    outline:0px;
+    display:none;
+    background-color:#aff;
+    }
+#display #gallary1,#gallary2,#gallary3,#gallary4,#gallary5{
+    display:none;
+    width:140px;
+    height:140px;
+    transform:translate(0px,25px);
+    border-radius:10px;
+    border:2px solid #adf;
+    }
+#display #calender1,#calender2,#calender3,#calender4,#calender5,#calender6,#calender7,#calender8,#calender9,#calender10,#calender11,#calender12{
+    width:140px;
+    height:140px;
+    transform:translate(0px,25px);
+    display:none;
+    }
+#display #about{
+    transform:translate(0px,25px);
+    display:none;
+    position:absolute;
+    width:140px;
+    word-wrap:break-word;
+    color:black;
+    font-size:13px;
+    text-align:center;
+    }
+#about .syedTamal{
+    font-family:Georgia,Times New Roman;
+    font-weight:bold;
+    animation:sTamal 5s linear infinite;
+    }
+@keyframes sTamal{
+    0%{color:red;}
+    30%{color:green;}
+    60%{color:yellow;}
+    80%{color:blue;}
+    100%{color:red;}
+    }
+#emailForm{
+    transform:translate(0px,25px);
+    display:none;
+    }
+#status #img{
+    width:12px;
+    height:12px;
+    }
+#appAll{
+    display:none;
+    }
+
+#app img{
+    width:18px;
+    height:18px;
+    border:2px solid green;
+    border-radius:9px;
+    }
+#display #appName{
+    color:black;
+    translate:(0px,5px;);
+    position:absolute;
+    display:none;
+    font-family:Fantasy;
+    background-color:#ff8f8f;
+    width:100%;
+    text-align:center;
+    }
+#selectName{
+    display:none;
+    transform:translate(0px,25px);
+    width:100%;
+    }
+#display #fF{
+    font-size:12px;
+    transform:translate(0px,25px);
+    display:none;
+    }
+#fF #resultX{
+    width:140px;
+    background-color:#ffffff;
+    height:20px;
+    margin-top:10px;
+    font-size:17px;
+    color:#000000;
+    background-color:#b4abab;
+    }
+#fA,#fB,#fC{
+    width:140px;
+    background-color:#b4abab;
+    }
+#display #convertName{
+    transform:translate(0px,25px);
+    display:none;
+    width:100%
+    }
+#display #sourceCode{
+    transform:translate(0px,25px);
+    display:none;
+    width:100%
+    }
+#display .conName{
+    font-size:15px;
+    color:black;
+    width:100%;
+    border-bottom:1px solid black;
+    }
+
+#clock{
+    font-size:20px;
+    color:#ffffff;
+    position:absolute;
+    top:1.5cm;
+    left:1.3cm;
+    }
+#date{
+    font-size:10px;
+    color:#ffffff;
+    position:absolute;
+    top:2cm;
+    left:1.4cm;
+    }
+#phoneNumber{
+    transform:translate(0,3.3cm);
+    color:black;
+    font-family:Times New Roman;
+    float:right;
+    font-size:20px;
+    display:inline-block;
+    text-wrap:break-word;
+    }
+#table{
+    color:white;
+    font-size:14px;
+    width:100%;
+    border-top:1px solid #edd;
+    transform:translate(0,4.1cm);
+    visibility:hidden;
+    text-shadow:.5px .5px black,-.5px -.5px black;
+    }
+</style>
+<body>
+
+<div class="mBody">
+    <div class="frontSpeaker">
+    </div>
+    <div class="model">Q40
+    </div>
+    <div id="display">
+        <div id="status">
+         <img width="8px" height="8px" src="https://i.ibb.co/6Nkvf4V/images.jpg">
+           <img width="8px" height="8px" src="https://i.ibb.co/6Nkvf4V/images.jpg">
+         <img width="8px" height="8px" src="https://i.ibb.co/PWqjrBk/282120.png">
+
+
+         <span style="float:right">
+             <img width="8px" height="8px" src="https://i.ibb.co/kQ1Fnhg/images.png">
+         </span>
+        </div>
+        <div id="appName">
+        </div>
+        <div id="convertName">
+        <div class="conName" id="conName1">
+            1.cm & in
+        </div>
+        <div class="conName" id="conName2">
+            1.C° & F°
+        </div>
+        <div class="conName" id="conName3">
+            1.kg & lb
+        </div>
+        </div>
+        <div id="sourceCode">
+            <div class="conName" id="htmlFile">
+                1.HTML file
+            </div>
+            <div class="conName" id="cssFile">
+                2.CSS file
+            </div>
+            <div class="conName" id="jsFile">
+                3.JavaScript file
+            </div>
+        </div>
+        <div id="selectName">
+            <div class="conName" id="sName1" >
+            </div>
+            <div class="conName" id="sName2">
+            </div>
+        </div>
+        <form id="emailForm" name="eForm">
+        <input type="email" style="width:140px" name="eName" placeholder="abcd@efgh.com">
+        <input type="text" style="width:140px" name="sName" placeholder="Type subject">
+        <input type="text" style="width:140px;height:100px;" name="mName" placeholder="Write message">
+        </form>
+        <input type="url" name="Facebook" value="https://facebook.com" id="urlGo">
+        <img src="https://i.ibb.co/Z6q2zZy/images-1-3.jpg"  id="gallary1">
+        <img src="https://i.ibb.co/N7zTNnt/images-1-4.jpg" id="gallary2">
+        <img src="https://i.ibb.co/F605JHz/images-1-5.jpg" id="gallary3">
+        <img src="https://i.ibb.co/mvxHmJG/Nature-photography-niko-photos.jpg" id="gallary4">
+        <img src="https://i.ibb.co/y60d4Sb/images-1-6.jpg" id="gallary5">
+        <img src="https://i.ibb.co/RYS0SPL/Screenshot-20210805-202004.jpg" id="calender1">
+        <img src="https://i.ibb.co/5j8kqcF/Screenshot-20210805-202031.jpg" id="calender2">
+        <img src="https://i.ibb.co/4S1kCNg/Screenshot-20210805-202051.jpg" id="calender3">
+        <img src="https://i.ibb.co/rt8TcrV/Screenshot-20210805-202111.jpg" id="calender4">
+        <img src="https://i.ibb.co/PNZ49Dx/Screenshot-20210805-202130.jpg" id="calender5">
+        <img src="https://i.ibb.co/9nBHFTQ/Screenshot-20210805-202155.jpg" id="calender6">
+        <img src="https://i.ibb.co/f14CByN/Screenshot-20210805-202215.jpg" id="calender7">
+        <img src="https://i.ibb.co/mNY0LZ4/Screenshot-20210805-202237.jpg" id="calender8">
+        <img src="https://i.ibb.co/pbvLWxw/Screenshot-20210805-202250.jpg" id="calender9">
+        <img src="https://i.ibb.co/JQ22PNP/Screenshot-20210805-202307.jpg" id="calender10">
+        <img src="https://i.ibb.co/2y3FX2q/Screenshot-20210805-202329.jpg" id="calender11">
+        <img src="https://i.ibb.co/6tTk8zz/Screenshot-20210805-202344.jpg" id="calender12">
+        <div id="about">
+            This project is developed by <span class="syedTamal">SYED TAMAL </span>for practicing.
+            You can enjoy with Call,Calculating,Converting and more.<span class="syedTamal">SYED TAMAL</span>
+            thanked you for visiting this project.
+            </div>
+        <form id="fF" name="functionF">
+        Input the value of a:
+            <input type="text" id="fA" name="fA">
+        Input the valute of b:
+            <input type="text" id="fB" name="fB">
+        Input the value of c:
+            <input type="text" id="fC" name="fC">
+        <div id="resultX">
+            X=
+        </div>
+        </form>
+        <div id="appAll">
+        <table  border="0" width="150px" height="180px" cellpading="0">
+        <tr>
+        <td>
+        <div id="app">
+            <img id="app1" src="https://i.ibb.co/bNNRyPY/1200px-Calculator-icon-svg.png">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app2" src="https://i.ibb.co/ySHNT1y/Apps-Accessories-Media-Converter-icon.png">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app3" src="https://i.ibb.co/Rh4XrnK/images-1-2.jpg">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app4" src="https://i.ibb.co/vQ01tpF/download.jpg">
+        </div>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <div id="app">
+            <img id="app5" src="https://i.ibb.co/kD08GDf/1260673.png">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app6" src="https://i.ibb.co/26vKxMp/gallery-131964752828011266.png">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app7" src="https://i.ibb.co/KmKZRb7/663353.png">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app8" src="https://i.ibb.co/XWdZpPs/images-1.jpg">
+        </div>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <div id="app">
+            <img id="app9" src="https://i.ibb.co/SBtc25S/about-131964752256876096.png">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app10" src="https://i.ibb.co/PWqjrBk/282120.png">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app11" src="https://i.ibb.co/6Nkvf4V/images.jpg">
+        </div>
+        </td>
+        <td>
+        <div id="app">
+            <img id="app12" src="https://i.ibb.co/DQdXpgv/2604374.png">
+        </div>
+        </td>
+        </tr>
+        </table>
+        </div>
+        <div id="clock">
+        </div>
+        <div id="date">
+        </div>
+        <div id="phoneNumber">
+        </div>
+        <table id="table">
+            <tr>
+                <td>Menu</td>
+                <td><span style="float:right;">Contact</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="brand" >WALTON
+    </div>
+    <div class="centerButton">
+        <div onClick="circle1()" class="circle" style="transform:translate(0px,20px);">
+        </div>
+        <div class="circle" onClick="circle2()" style="transform:translate(20px,-10px);">
+        </div>
+        <div class="circle" onClick="circle3()" style="transform:translate(40px,0px);">
+        </div>
+        <div onClick="circle4()" class="circle" style="transform:translate(20px,10px);">
+        </div>
+    </div>
+    <div onClick="findApp()" class="button" style="    transform:translate(0.45cm,-0.4cm);text-align:center" id="bt1">─
+    </div>
+    <div onClick="ppp()" class="button" style="    transform:translate(0.45cm,-0.4cm);text-align:center;display:none" id="bt2">─
+    </div>
+    <div onClick="callNum()" class="button" style="    transform:translate(0.45cm,-0.1cm);text-align:center">✆
+    </div>
+    <div onClick="rightTop()" class="button" style="    transform:translate(3.45cm,-1.5cm);text-align:center">►
+    </div>
+    <div class="button" onClick="openDisplay()" style="    transform:translate(3.45cm,-1.2cm);text-align:center">⊙
+    </div>
+    <div style="margin-top:-0.8cm;">
+    <div onClick="val(1)" class="button" style="    float:left;margin-left:0.45cm;">
+        1<span class="sFont">ং--ঁ</span>
+    </div>
+    <div onClick="val(2)" class="button" style="    float:left;margin-left:0.45cm;">2
+        <span class="sFont">অ-ঋ<br>abc</span>
+    </div>
+    <div class="button" onClick="val(3)" style="    float:left;margin-left:0.45cm;">3
+        <span class="sFont">এ-ঔ<br>def</span>
+    </div>
+    </div>
+    <div style="margin-top:0.9cm;">
+    <div onClick="val(4)" class="button" style="    float:left;margin-left:0.45cm;">4
+        <span class="sFont">ক-ঙ<br>ghi</span>
+    </div>
+    <div class="button" onClick="val(5)" style="    float:left;margin-left:0.45cm;">5
+        <span class="sFont">চ-ঞ<br>jkl</span>
+    </div>
+    <div onClick="val(6)" class="button" style="    float:left;margin-left:0.45cm;">6
+        <span class="sFont">ট-ণ<br>mno</span>
+    </div>
+    </div>
+    <div style="margin-top:1.8cm;">
+    <div class="button" onClick="val(7)" style="    float:left;margin-left:0.45cm;">7
+        <span class="sFont">ত-ন<br>pqrs</span>
+    </div>
+    <div onClick="val(8)" class="button" style="    float:left;margin-left:0.45cm;">8
+        <span class="sFont">প-ম<br>tuv</span>
+    </div>
+    <div class="button" onClick="val(9)" style="    float:left;margin-left:0.45cm;">9
+        <span class="sFont">য-স<br>wxyz</span>
+    </div>
+    </div>
+    <div style="margin-top:2.7cm;">
+    <div onClick="val(*)" class="button" style="    float:left;margin-left:0.45cm;">*
+        <span class="sFont">+<br>,</span>
+    </div>
+    <div onClick="val(0)" class="button" style="    float:left;margin-left:0.45cm;">0
+        <span class="sFont">হ-ৎ<br>()</span>
+    </div>
+    <div onClick="val(#)" class="button" style="    float:left;margin-left:0.45cm;">#
+        <span class="sFont">|-?<br>!-↑</span>
+    </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+  var display=document.getElementById("display");
+    var clock=document.getElementById("clock");
+    var date=document.getElementById("date");
+    var appAll=document.getElementById("appAll");
+    var table=document.getElementById("table");
+    var phoneNumber=document.getElementById("phoneNumber");
+    var call=document.getElementById("call");
+    var cButton=0;
+    var dButton=0;
+    var eButton=0;
+    var gButton=0;
+    var iButton=0;
+     var app1=document.getElementById("app1");
+     var app2=document.getElementById("app2");
+     var appName=document.getElementById("appName");
+    var conName1=document.getElementById("conName1");
+    var conName2=document.getElementById("conName2");
+    var conName3=document.getElementById("conName3");
+    var convertName=document.getElementById("convertName");
+    var app3=document.getElementById("app3");
+    var app4=document.getElementById("app4");
+    var app5=document.getElementById("app5");
+    var app6=document.getElementById("app6");
+    var app7=document.getElementById("app7");
+    var app8=document.getElementById("app8");
+    var app9=document.getElementById("app9");
+    var app10=document.getElementById("app10");
+    var app11=document.getElementById("app11");
+    var app12=document.getElementById("app12");
+    var selectName=document.getElementById("selectName");
+    var sName2=document.getElementById("sName2");
+    var sName1=document.getElementById("sName1");
+    var fButton=0;
+    var fF=document.getElementById("fF");
+
+function openDisplay(){
+    document.getElementById("phoneNumber").innerHTML="";
+    document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/R2WJXGz/images-12.jpg')";
+    document.getElementById("phoneNumber").style.display="none";
+    document.getElementById("appName").style.display="none";
+    document.getElementById("convertName").style.display="none";
+    document.getElementById("selectName").style.display="none"
+    dButton=0;
+    cButton=0;
+    eButton=0;
+    fButton=0;
+    iButton=0;
+    document.getElementById("sourceCode").style.display="none";
+    document.getElementById("sName1").style.backgroundColor="#ffffff";
+    document.getElementById("sName2").style.backgroundColor="#ffffff";
+    document.getElementById("about").style.display="none";
+    document.getElementById("gallary1").style.display="none";
+    document.getElementById("gallary2").style.display="none";
+    document.getElementById("gallary3").style.display="none";
+    document.getElementById("gallary4").style.display="none";
+    document.getElementById("gallary5").style.display="none";
+    document.getElementById("urlGo").style.display="none";
+    document.getElementById("calender1").style.display="none";
+    document.getElementById("calender2").style.display="none";
+    document.getElementById("calender3").style.display="none";
+    document.getElementById("calender4").style.display="none";
+    document.getElementById("calender5").style.display="none";
+    document.getElementById("calender6").style.display="none";
+    document.getElementById("calender7").style.display="none";
+    document.getElementById("calender8").style.display="none";
+    document.getElementById("calender9").style.display="none";
+    document.getElementById("calender10").style.display="none";
+    document.getElementById("calender11").style.display="none";
+    document.getElementById("calender12").style.display="none";
+    document.getElementById("emailForm").style.display="none";
+    document.getElementById("fF").style.display="none";
+    document.getElementById("conName1").style.backgroundColor="#ffffff";
+    document.getElementById("conName2").style.backgroundColor="#ffffff";
+    document.getElementById("conName3").style.backgroundColor="#ffffff";
+    document.getElementById("conName1").style.color="#000000";
+    document.getElementById("conName2").style.color="#000000";
+    document.getElementById("conName3").style.color="#000000";
+    document.getElementById("app1").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";
+    document.getElementById("status").style.visibility="visible";
+    document.getElementById("clock").style.display="inline-block";
+    document.getElementById("date").style.display="inline-block";
+    document.getElementById("table").style.visibility="visible";
+    document.getElementById("appAll").style.display="none";
+    function clockTime(){
+        var time=new Date();
+        var hours=time.getHours();
+        var minutes=time.getMinutes();
+        var seconds=time.getSeconds();
+        document.getElementById("clock").innerHTML=hours+":"+minutes;
+        var day=time.getDay();
+        var month=time.getMonth();
+        var year=time.getFullYear();
+        document.getElementById("date").innerHTML=day+"-"+month+"-"+year;
+    }
+    var cTime=setInterval(clockTime,1000);
+    }
+
+function findApp(){
+dButton++
+if(dButton==2){
+if(cButton==0){
+
+    document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+    document.getElementById("appAll").style.display="none";
+    document.getElementById("appName").style.display="inline-block";
+    document.getElementById("appName").innerHTML="Calculator";
+    }
+    else if(cButton==1){
+    document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+    document.getElementById("appAll").style.display="none";
+    document.getElementById("appName").innerHTML="Convert";
+    document.getElementById("appName").style.display="inline-block";
+    document.getElementById("convertName").style.display="inline-block";
+    }
+    else if(cButton==2){
+        document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+        document.getElementById("appName").innerHTML="ax<sup>2</sup>+bx+c";
+        document.getElementById("appName").style.display="inline-block";
+        document.getElementById("fF").style.display="inline-block";
+        document.getElementById("appAll").style.display="none";
+        }
+    else if(cButton==3){
+        document.getElementById("appAll").style.display="none";
+        document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+        document.getElementById("appName").innerHTML="Email";
+        document.getElementById("appName").style.display="inline-block";
+        document.getElementById("emailForm").style.display="inline-block";
+        }
+    else if(cButton==4){
+
+document.getElementById("bt1").style.display="none";
+document.getElementById("bt2").style.display="inline-block";
+        document.getElementById("urlGo").style.display="inline-block";
+        document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+        document.getElementById("appName").style.display="inline-block";
+        document.getElementById("appName").innerHTML="URL";
+        document.getElementById("appAll").style.display="none";
+        }
+    else if(cButton==5){
+                document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+                document.getElementById("appName").style.display="inline-block";
+                document.getElementById("appName").innerHTML="Gallary";
+                document.getElementById("appAll").style.display="none";
+                document.getElementById("gallary1").style.display="inline-block";
+                }
+    else if(cButton==6){
+                document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+                document.getElementById("appName").style.display="inline-block";
+                document.getElementById("appName").innerHTML="Calendar";
+                document.getElementById("appAll").style.display="none";
+                document.getElementById("calender1").style.display="inline-block";
+            }
+    else if(cButton==7){
+                document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+                document.getElementById("appAll").style.display="none";
+                }
+    else if(cButton==8){
+                document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+                document.getElementById("appName").style.display="inline-block";
+                document.getElementById("appName").innerHTML="About";
+                document.getElementById("appAll").style.display="none";
+                document.getElementById("about").style.display="inline-block";
+                }
+    else if(cButton==9){
+    document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+    document.getElementById("appName").style.display="inline-block";
+    document.getElementById("appName").innerHTML="Music";
+    document.getElementById("appAll").style.display="none";
+    document.getElementById("about").style.display="inline-block";
+    document.getElementById("about").innerHTML="Empty Playlist";
+    }
+    else if(cButton==10){
+    document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+    document.getElementById("appName").style.display="inline-block";
+    document.getElementById("appName").innerHTML="Network";
+    document.getElementById("appAll").style.display="none";
+    document.getElementById("about").style.display="inline-block";
+    document.getElementById("about").innerHTML="No SIM card. Please insert a SIM card.";
+    }
+    else if(cButton==11){
+    document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+    document.getElementById("appName").style.display="inline-block";
+    document.getElementById("appName").innerHTML="Source Code";
+    document.getElementById("appAll").style.display="none";
+    document.getElementById("sourceCode").style.display="inline-block";
+    }
+
+
+}
+else if(dButton==3){
+    if(cButton==0){
+        dButton=2;
+        var y=document.getElementById("phoneNumber").innerHTML;
+        var x=eval(y);
+        document.getElementById("phoneNumber").innerHTML=x;
+        }
+    else if(cButton==1){
+        if(eButton==0){
+                document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+                document.getElementById("selectName").style.display="block";
+                document.getElementById("sName1").innerHTML="1.in to cm";
+                document.getElementById("sName2").innerHTML="2.cm to in";
+                document.getElementById("convertName").style.display="none";
+            }
+            else if(eButton==1){
+                document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+                document.getElementById("selectName").style.display="inline-block";
+                document.getElementById("sName1").innerHTML="1.in to cm";
+                document.getElementById("sName2").innerHTML="2.cm to in";
+                document.getElementById("convertName").style.display="none";
+            }
+            else if(eButton==2){
+                document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+                document.getElementById("selectName").style.display="inline-block";
+                document.getElementById("sName1").innerHTML="1.C to F";
+                document.getElementById("sName2").innerHTML="2.F to C";
+                document.getElementById("convertName").style.display="none";
+            }
+            else if(eButton==3){
+            document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+            document.getElementById("selectName").style.display="inline-block";
+            document.getElementById("sName1").innerHTML="1.kg to lb";
+            document.getElementById("sName2").innerHTML="2.lb to kg";
+            document.getElementById("convertName").style.display="none";
+            }
+        }
+    else if(cButton==2){
+        dButton=2;
+        var resultX=document.getElementById("resultX");
+        var fA=document.functionF.fA.value;
+        var fB=document.functionF.fB.value;
+        var fC=document.functionF.fC.value;
+
+        var w=eval("fB*fB-4*fA*fC");
+        var x=Math.sqrt(w);
+        var y=eval("(-fB+x)/(2*fA)");
+        var z=eval("(-fB-x)/(2*fA)");
+        resultX.innerHTML="X="+y.toFixed(2)+","+z.toFixed(2);
+
+        if(isNaN(resultX.innerHTML)){
+            var a=eval("fB*fB-4*fA*fC");
+            var b=eval("-1*a");
+            var c=Math.sqrt(b);
+            var d=eval("-fB/(2*fA)");
+            resultX.innerHTML="<small>X="+d.toFixed(1)+"+"+c.toFixed(1)+"i</small>";
+        }
+        }
+    else if(cButton==3){
+        dButton=2;
+        var eName=document.eForm.eName.value;
+        var sName=document.eForm.sName.value;
+        var mName=document.eForm.mName.value;
+        window.location.href="mailto:"+eName+"?subject="+sName+"&body="+mName;
+        }
+    else if(cButton==3){
+        dButton=2;
+        urlGo=document.getElementById("urlGo").value;
+        window.location.href=urlGo;
+        }
+    else if(cButton==4||cButton==5||cButton==6||cButton==7||cButton==8||cButton==9||cButton==10){
+        dButton=2;
+        }
+    }
+else if(dButton==4){
+    if(cButton==1){
+        if(eButton==1||eButton==2||eButton==3||eButton==0){
+            if(fButton==1||fButton==2){
+                document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+                document.getElementById("selectName").style.display="none";
+                }
+            }
+        }
+    }
+else if(dButton==5){
+    if(cButton==1){
+        if(eButton==1){
+            if(fButton==2){
+                dButton=4;
+                var w=document.getElementById("phoneNumber").innerHTML;
+                var v=eval("w/2.54");
+                document.getElementById("phoneNumber").innerHTML=v.toFixed(2);
+                }
+            else if(fButton==1){
+                dButton=4;
+                var w=document.getElementById("phoneNumber").innerHTML;
+                var v=eval("w*2.54");
+                document.getElementById("phoneNumber").innerHTML=v.toFixed(2);
+                }
+            }
+        else if(eButton==2){
+        if(fButton==1){
+        dButton=4;
+        var w=document.getElementById("phoneNumber").innerHTML;
+        var v=eval("9*w/5+32");
+        document.getElementById("phoneNumber").innerHTML=v.toFixed(2);
+        }
+        else if(fButton==2){
+        dButton=4;
+        var w=document.getElementById("phoneNumber").innerHTML;
+        var v=eval("5*w/9-17.77");
+        document.getElementById("phoneNumber").innerHTML=v.toFixed(2);
+        }
+        }
+        else if(eButton==3){
+        if(fButton==1){
+        dButton=4;
+        var w=document.getElementById("phoneNumber").innerHTML;
+        var v=eval("2.2*w");
+        document.getElementById("phoneNumber").innerHTML=v.toFixed(2);
+        }
+        else if(fButton==2){
+        dButton=4;
+        var w=document.getElementById("phoneNumber").innerHTML;
+        var v=eval("w/2.2");
+        document.getElementById("phoneNumber").innerHTML=v.toFixed(2);
+        }
+        }
+    }
+    }
+else{
+    document.getElementById("appAll").style.display="inline-block";
+    document.getElementById("clock").style.display="none";
+    document.getElementById("date").style.display="none";
+    document.getElementById("table").style.visibility="hidden";
+    }
+ }
+
+
+function val(n){
+    document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+    document.getElementById("phoneNumber").innerHTML+=n;
+    document.getElementById("phoneNumber").style.display="inline-block";
+    document.getElementById("table").style.visibility="hidden";
+    }
+
+function rightTop(){
+    if(document.getElementById("phoneNumber").style.display=="inline-block"){
+            document.getElementById("phoneNumber").innerHTML="";
+            document.getElementById("display").style.backgroundImage="url('https://i.ibb.co/C186Y8H/20210731-184439.jpg')";
+            }
+    }
+function callNum(){
+        if(dButton==0){
+          window.location.href = 'tel:'+ document.getElementById("phoneNumber").innerHTML;
+          }
+        else if(dButton==2){
+            if(cButton==7){
+                 window.location.href = 'tel:'+ document.getElementById("phoneNumber").innerHTML;
+                 }
+                }
+        }
+
+function circle3(){
+
+  if(document.getElementById("appAll").style.display=="inline-block"){
+    cButton++;
+    if(cButton>11){
+    cButton=0;
+    }
+
+    switch (cButton){
+        case 0:
+        document.getElementById("app1").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+
+        case 1:
+            document.getElementById("app2").style.border="2px solid #add";
+            document.getElementById("app1").style.border="2px solid green";;
+            document.getElementById("app3").style.border="2px solid green";;
+            document.getElementById("app4").style.border="2px solid green";;
+            document.getElementById("app5").style.border="2px solid green";;
+            document.getElementById("app6").style.border="2px solid green";;
+            document.getElementById("app7").style.border="2px solid green";;
+            document.getElementById("app8").style.border="2px solid green";;
+            document.getElementById("app9").style.border="2px solid green";;
+            document.getElementById("app11").style.border="2px solid green";;
+            document.getElementById("app10").style.border="2px solid green";;
+            document.getElementById("app12").style.border="2px solid green";;
+            break;
+        case 2:
+            document.getElementById("app3").style.border="2px solid #add";
+            document.getElementById("app2").style.border="2px solid green";;
+            document.getElementById("app1").style.border="2px solid green";;
+            document.getElementById("app4").style.border="2px solid green";;
+            document.getElementById("app5").style.border="2px solid green";;
+            document.getElementById("app6").style.border="2px solid green";;
+            document.getElementById("app7").style.border="2px solid green";;
+            document.getElementById("app8").style.border="2px solid green";;
+            document.getElementById("app9").style.border="2px solid green";;
+            document.getElementById("app11").style.border="2px solid green";;
+            document.getElementById("app10").style.border="2px solid green";;
+            document.getElementById("app12").style.border="2px solid green";;
+            break;
+
+        case 3:
+            document.getElementById("app4").style.border="2px solid #add";
+            document.getElementById("app2").style.border="2px solid green";;
+            document.getElementById("app3").style.border="2px solid green";;
+            document.getElementById("app1").style.border="2px solid green";;
+            document.getElementById("app5").style.border="2px solid green";;
+            document.getElementById("app6").style.border="2px solid green";;
+            document.getElementById("app7").style.border="2px solid green";;
+            document.getElementById("app8").style.border="2px solid green";;
+            document.getElementById("app9").style.border="2px solid green";;
+            document.getElementById("app11").style.border="2px solid green";;
+            document.getElementById("app10").style.border="2px solid green";;
+            document.getElementById("app12").style.border="2px solid green";;
+            break;
+        case 4:
+        document.getElementById("app5").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 5:
+        document.getElementById("app6").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 6:
+        document.getElementById("app7").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 7:
+        document.getElementById("app8").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 8:
+        document.getElementById("app9").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 9:
+        document.getElementById("app10").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 10:
+        document.getElementById("app11").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 11:
+        document.getElementById("app12").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        break;
+
+        default:
+        document.getElementById("app1").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        }
+    }
+else if(document.getElementById("appName").innerHTML=="Calculator"){
+    document.getElementById("phoneNumber").innerHTML+="-";
+    }
+else if(document.getElementById("appName").innerHTML=="Gallary"){
+    gButton++;
+    if(gButton>4){
+        gButton=0
+        }
+    switch(gButton){
+    case 0:
+        document.getElementById("gallary1").style.display="inline-block";
+        document.getElementById("gallary2").style.display="none";
+        document.getElementById("gallary3").style.display="none";
+        document.getElementById("gallary4").style.display="none";
+        document.getElementById("gallary5").style.display="none";
+        break;
+    case 1:
+    document.getElementById("gallary2").style.display="inline-block";
+    document.getElementById("gallary1").style.display="none";
+    document.getElementById("gallary3").style.display="none";
+    document.getElementById("gallary4").style.display="none";
+    document.getElementById("gallary5").style.display="none";
+    break;
+    case 2:
+    document.getElementById("gallary3").style.display="inline-block";
+    document.getElementById("gallary2").style.display="none";
+    document.getElementById("gallary1").style.display="none";
+    document.getElementById("gallary4").style.display="none";
+    document.getElementById("gallary5").style.display="none";
+    break;
+    case 3:
+    document.getElementById("gallary4").style.display="inline-block";
+    document.getElementById("gallary2").style.display="none";
+    document.getElementById("gallary3").style.display="none";
+    document.getElementById("gallary1").style.display="none";
+    document.getElementById("gallary5").style.display="none";
+    break;
+    case 4:
+    document.getElementById("gallary5").style.display="inline-block";
+    document.getElementById("gallary2").style.display="none";
+    document.getElementById("gallary3").style.display="none";
+    document.getElementById("gallary4").style.display="none";
+    document.getElementById("gallary1").style.display="none";
+    break;
+    default:
+    dButton=0;
+    document.getElementById("gallary1").style.display="inline-block";
+    document.getElementById("gallary2").style.display="none";
+    document.getElementById("gallary3").style.display="none";
+    document.getElementById("gallary4").style.display="none";
+    document.getElementById("gallary5").style.display="none";
+
+    }
+    }
+    else if(document.getElementById("appName").innerHTML=="Calendar"){
+        fButton++;
+        if(fButton>11){
+            fButton=0;
+            }
+        switch(fButton){
+            case 0:
+                document.getElementById("calender1").style.display="inline-block";
+                document.getElementById("calender2").style.display="none";
+                document.getElementById("calender3").style.display="none";
+                document.getElementById("calender4").style.display="none";
+                document.getElementById("calender5").style.display="none";
+                document.getElementById("calender6").style.display="none";
+                document.getElementById("calender7").style.display="none";
+                document.getElementById("calender8").style.display="none";
+                document.getElementById("calender9").style.display="none";
+                document.getElementById("calender10").style.display="none";
+                document.getElementById("calender11").style.display="none";
+                document.getElementById("calender12").style.display="none";
+                break;
+                case 1:
+                document.getElementById("calender2").style.display="inline-block";
+                document.getElementById("calender1").style.display="none";
+                document.getElementById("calender3").style.display="none";
+                document.getElementById("calender4").style.display="none";
+                document.getElementById("calender5").style.display="none";
+                document.getElementById("calender6").style.display="none";
+                document.getElementById("calender7").style.display="none";
+                document.getElementById("calender8").style.display="none";
+                document.getElementById("calender9").style.display="none";
+                document.getElementById("calender10").style.display="none";
+                document.getElementById("calender11").style.display="none";
+                document.getElementById("calender12").style.display="none";
+                break;
+                    case 2:
+                    document.getElementById("calender3").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 3:
+                    document.getElementById("calender4").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 4:
+                    document.getElementById("calender5").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 5:
+                    document.getElementById("calender6").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 6:
+                    document.getElementById("calender7").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 7:
+                    document.getElementById("calender8").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 8:
+                    document.getElementById("calender9").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 9:
+                    document.getElementById("calender10").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 10:
+                    document.getElementById("calender11").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                    break;
+                    case 11:
+                    document.getElementById("calender12").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender1").style.display="none";
+                    break;
+                    default:
+                    document.getElementById("calender1").style.display="inline-block";
+                    document.getElementById("calender2").style.display="none";
+                    document.getElementById("calender3").style.display="none";
+                    document.getElementById("calender4").style.display="none";
+                    document.getElementById("calender5").style.display="none";
+                    document.getElementById("calender6").style.display="none";
+                    document.getElementById("calender7").style.display="none";
+                    document.getElementById("calender8").style.display="none";
+                    document.getElementById("calender9").style.display="none";
+                    document.getElementById("calender10").style.display="none";
+                    document.getElementById("calender11").style.display="none";
+                    document.getElementById("calender12").style.display="none";
+                }
+}
+}
+
+    function circle1(){
+
+    if(document.getElementById("appAll").style.display=="inline-block"){
+    cButton--;
+    if(cButton<0){
+    cButton=0;
+    }
+
+    switch (cButton){
+    case 0:
+    document.getElementById("app1").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+
+    case 1:
+    document.getElementById("app2").style.border="2px solid #add";
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 2:
+    document.getElementById("app3").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+
+    case 3:
+    document.getElementById("app4").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 4:
+    document.getElementById("app5").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 5:
+    document.getElementById("app6").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 6:
+    document.getElementById("app7").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 7:
+    document.getElementById("app8").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 8:
+    document.getElementById("app9").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 9:
+    document.getElementById("app10").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 10:
+    document.getElementById("app11").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 11:
+    document.getElementById("app12").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    break;
+
+    default:
+    document.getElementById("app1").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    }
+    }
+    else if(document.getElementById("appName").innerHTML=="Calculator"){
+    document.getElementById("phoneNumber").innerHTML+="/";
+    }
+        else if(document.getElementById("appName").innerHTML=="Gallary"){
+        gButton--;
+        if(gButton<0){
+        gButton=0;
+        }
+        switch(gButton){
+        case 0:
+        document.getElementById("gallary1").style.display="inline-block";
+        document.getElementById("gallary2").style.display="none";
+        document.getElementById("gallary3").style.display="none";
+        document.getElementById("gallary4").style.display="none";
+        document.getElementById("gallary5").style.display="none";
+        break;
+        case 1:
+        document.getElementById("gallary2").style.display="inline-block";
+        document.getElementById("gallary1").style.display="none";
+        document.getElementById("gallary3").style.display="none";
+        document.getElementById("gallary4").style.display="none";
+        document.getElementById("gallary5").style.display="none";
+        break;
+        case 2:
+        document.getElementById("gallary3").style.display="inline-block";
+        document.getElementById("gallary2").style.display="none";
+        document.getElementById("gallary1").style.display="none";
+        document.getElementById("gallary4").style.display="none";
+        document.getElementById("gallary5").style.display="none";
+        break;
+        case 3:
+        document.getElementById("gallary4").style.display="inline-block";
+        document.getElementById("gallary2").style.display="none";
+        document.getElementById("gallary3").style.display="none";
+        document.getElementById("gallary1").style.display="none";
+        document.getElementById("gallary5").style.display="none";
+        break;
+        case 4:
+        document.getElementById("gallary5").style.display="inline-block";
+        document.getElementById("gallary2").style.display="none";
+        document.getElementById("gallary3").style.display="none";
+        document.getElementById("gallary4").style.display="none";
+        document.getElementById("gallary1").style.display="none";
+        break;
+        default:
+        dButton=0;
+        document.getElementById("gallary1").style.display="inline-block";
+        document.getElementById("gallary2").style.display="none";
+        document.getElementById("gallary3").style.display="none";
+        document.getElementById("gallary4").style.display="none";
+        document.getElementById("gallary5").style.display="none";
+
+        }
+        }
+        else if(document.getElementById("appName").innerHTML=="Calendar"){
+        fButton--;
+        if(fButton<0){
+        fButton=0;
+        }
+        switch(fButton){
+        case 0:
+        document.getElementById("calender1").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 1:
+        document.getElementById("calender2").style.display="inline-block";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 2:
+        document.getElementById("calender3").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 3:
+        document.getElementById("calender4").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 4:
+        document.getElementById("calender5").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 5:
+        document.getElementById("calender6").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 6:
+        document.getElementById("calender7").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 7:
+        document.getElementById("calender8").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 8:
+        document.getElementById("calender9").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 9:
+        document.getElementById("calender10").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 10:
+        document.getElementById("calender11").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        break;
+        case 11:
+        document.getElementById("calender12").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender1").style.display="none";
+        break;
+        default:
+        document.getElementById("calender1").style.display="inline-block";
+        document.getElementById("calender2").style.display="none";
+        document.getElementById("calender3").style.display="none";
+        document.getElementById("calender4").style.display="none";
+        document.getElementById("calender5").style.display="none";
+        document.getElementById("calender6").style.display="none";
+        document.getElementById("calender7").style.display="none";
+        document.getElementById("calender8").style.display="none";
+        document.getElementById("calender9").style.display="none";
+        document.getElementById("calender10").style.display="none";
+        document.getElementById("calender11").style.display="none";
+        document.getElementById("calender12").style.display="none";
+        }
+        }
+
+
+
+    }
+
+    function circle2(){
+    if(document.getElementById("appAll").style.display=="inline-block"){
+    cButton-=4;
+    if(cButton<0){
+    cButton=0;
+    }
+
+    switch (cButton){
+    case 0:
+    document.getElementById("app1").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";
+    document.getElementById("app3").style.border="2px solid green";
+    document.getElementById("app4").style.border="2px solid green";
+    document.getElementById("app5").style.border="2px solid green";
+    document.getElementById("app6").style.border="2px solid green";
+    document.getElementById("app7").style.border="2px solid green";
+    document.getElementById("app8").style.border="2px solid green";
+    document.getElementById("app9").style.border="2px solid green";
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";
+    break;
+
+    case 1:
+    document.getElementById("app2").style.border="2px solid #add";
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 2:
+    document.getElementById("app3").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+
+    case 3:
+    document.getElementById("app4").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 4:
+    document.getElementById("app5").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 5:
+    document.getElementById("app6").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 6:
+    document.getElementById("app7").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 7:
+    document.getElementById("app8").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 8:
+    document.getElementById("app9").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 9:
+    document.getElementById("app10").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 10:
+    document.getElementById("app11").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    break;
+    case 11:
+    document.getElementById("app12").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app1").style.border="2px solid green";;
+    break;
+
+    default:
+    document.getElementById("app1").style.border="2px solid #add";
+    document.getElementById("app2").style.border="2px solid green";;
+    document.getElementById("app3").style.border="2px solid green";;
+    document.getElementById("app4").style.border="2px solid green";;
+    document.getElementById("app5").style.border="2px solid green";;
+    document.getElementById("app6").style.border="2px solid green";;
+    document.getElementById("app7").style.border="2px solid green";;
+    document.getElementById("app8").style.border="2px solid green";;
+    document.getElementById("app9").style.border="2px solid green";;
+    document.getElementById("app11").style.border="2px solid green";;
+    document.getElementById("app10").style.border="2px solid green";;
+    document.getElementById("app12").style.border="2px solid green";;
+    }
+    }
+    else if(document.getElementById("appName").innerHTML=="Calculator"){
+    document.getElementById("phoneNumber").innerHTML+="+";
+    }
+    else if(dButton==2){
+    if(cButton==1){
+    eButton--;
+    switch(eButton){
+    case 0:
+    document.getElementById("conName1").style.backgroundColor="#53b39c";
+    document.getElementById("conName2").style.backgroundColor="#ffffff";
+    document.getElementById("conName3").style.backgroundColor="#ffffff";
+    document.getElementById("conName1").style.color="#ffffff";
+    document.getElementById("conName2").style.color="#000000";
+    document.getElementById("conName3").style.color="#000000";
+    break;
+    case 1:
+    document.getElementById("conName1").style.backgroundColor="#53b39c";
+    document.getElementById("conName2").style.backgroundColor="#ffffff";
+    document.getElementById("conName3").style.backgroundColor="#ffffff";
+    document.getElementById("conName1").style.color="#ffffff";
+    document.getElementById("conName2").style.color="#000000";
+    document.getElementById("conName3").style.color="#000000";
+    break;
+    case 2:
+    document.getElementById("conName2").style.backgroundColor="#53b39c";
+    document.getElementById("conName1").style.backgroundColor="#ffffff";
+    document.getElementById("conName3").style.backgroundColor="#ffffff";
+    document.getElementById("conName2").style.color="#ffffff";
+    document.getElementById("conName1").style.color="#000000";
+    document.getElementById("conName3").style.color="#000000";
+    break;
+    case 3:
+    document.getElementById("conName3").style.backgroundColor="#53b39c";
+    document.getElementById("conName2").style.backgroundColor="#ffffff";
+    document.getElementById("conName1").style.backgroundColor="#ffffff";
+    document.getElementById("conName3").style.color="#ffffff";
+    document.getElementById("conName2").style.color="#000000";
+    document.getElementById("conName1").style.color="#000000";
+    break;
+    default:
+    eButton=1;
+    document.getElementById("conName1").style.backgroundColor="#53b39c";
+    document.getElementById("conName2").style.backgroundColor="#ffffff";
+    document.getElementById("conName3").style.backgroundColor="#ffffff";
+    document.getElementById("conName1").style.color="#ffffff";
+    document.getElementById("conName2").style.color="#000000";
+    document.getElementById("conName3").style.color="#000000";
+    }
+    }
+    else if(cButton==11){
+        iButton--;
+        if(iButton<0){
+            iButton=1;
+            }
+        switch(iButton){
+            case 1:
+                document.getElementById("htmlFile").style.backgroundColor="#  46c3ff";
+                document.getElementById("cssFile").style.backgroundColor="#ffffff";
+                document.getElementById("jsFile").style.backgroundColor="#ffffff";
+                document.getElementById("htmlFile").style.color="#  ffffff";
+                document.getElementById("cssFile").style.color="#  000000";
+                document.getElementById("jsFile").style.color="#  000000";
+                break;
+            case 2:
+            document.getElementById("cssFile").style.backgroundColor="#  46c3ff";
+            document.getElementById("htmlFile").style.backgroundColor="#ffffff";
+            document.getElementById("jsFile").style.backgroundColor="#ffffff";
+            document.getElementById("cssFile").style.color="#  ffffff";
+            document.getElementById("htmlFile").style.color="#  000000";
+            document.getElementById("jsFile").style.color="#  000000";
+            break;
+            case 3:
+            document.getElementById("jsFile").style.backgroundColor="#  46c3ff";
+            document.getElementById("cssFile").style.backgroundColor="#ffffff";
+            document.getElementById("htmlFile").style.backgroundColor="#ffffff";
+            document.getElementById("jsFile").style.color="#  ffffff";
+            document.getElementById("cssFile").style.color="#  000000";
+            document.getElementById("htmlFile").style.color="#  000000";
+            break;
+            default:
+            document.getElementById("htmlFile").style.backgroundColor="#  46c3ff";
+            document.getElementById("cssFile").style.backgroundColor="#ffffff";
+            document.getElementById("jsFile").style.backgroundColor="#ffffff";
+            document.getElementById("htmlFile").style.color="#  ffffff";
+            document.getElementById("cssFile").style.color="#  000000";
+            document.getElementById("jsFile").style.color="#  000000";
+            }
+        }
+    }
+    else if(dButton==3){
+    if(cButton==1){
+    fButton--;
+    if(fButton<0){
+    fButton=1;
+    }
+    switch(fButton){
+    case 1:
+    document.getElementById("sName1").style.backgroundColor="#53b39c";
+    document.getElementById("sName2").style.backgroundColor="#ffffff";
+    break;
+    case 2:
+    document.getElementById("sName2").style.backgroundColor="#53b39c";
+    document.getElementById("sName1").style.backgroundColor="#ffffff";
+    break;
+    default:
+    document.getElementById("sName1").style.backgroundColor="#53b39c";
+    document.getElementById("sName2").style.backgroundColor="#ffffff";
+    }
+    }
+
+    }
+  }
+function circle4(){
+
+  if(document.getElementById("appAll").style.display=="inline-block"){
+    cButton+=4;
+    if(cButton>11){
+        cButton=0;
+        }
+    switch (cButton){
+        case 0:
+        document.getElementById("app1").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+
+        case 1:
+        document.getElementById("app2").style.border="2px solid #add";
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 2:
+        document.getElementById("app3").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+
+        case 3:
+        document.getElementById("app4").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 4:
+        document.getElementById("app5").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 5:
+        document.getElementById("app6").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 6:
+        document.getElementById("app7").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 7:
+        document.getElementById("app8").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 8:
+        document.getElementById("app9").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 9:
+        document.getElementById("app10").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 10:
+        document.getElementById("app11").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        break;
+        case 11:
+        document.getElementById("app12").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app1").style.border="2px solid green";;
+        break;
+
+        default:
+        document.getElementById("app1").style.border="2px solid #add";
+        document.getElementById("app2").style.border="2px solid green";;
+        document.getElementById("app3").style.border="2px solid green";;
+        document.getElementById("app4").style.border="2px solid green";;
+        document.getElementById("app5").style.border="2px solid green";;
+        document.getElementById("app6").style.border="2px solid green";;
+        document.getElementById("app7").style.border="2px solid green";;
+        document.getElementById("app8").style.border="2px solid green";;
+        document.getElementById("app9").style.border="2px solid green";;
+        document.getElementById("app11").style.border="2px solid green";;
+        document.getElementById("app10").style.border="2px solid green";;
+        document.getElementById("app12").style.border="2px solid green";;
+        }
+    }
+    else if(document.getElementById("appName").innerHTML=="Calculator"){
+    document.getElementById("phoneNumber").innerHTML+="*";
+    }
+    else if(dButton==2){
+    if(cButton==1){
+        eButton++;
+        switch(eButton){
+            case 0:
+            document.getElementById("conName1").style.backgroundColor="#53b39c";
+            document.getElementById("conName2").style.backgroundColor="#ffffff";
+            document.getElementById("conName3").style.backgroundColor="#ffffff";
+            document.getElementById("conName1").style.color="#ffffff";
+            document.getElementById("conName2").style.color="#000000";
+            document.getElementById("conName3").style.color="#000000";
+            break;
+            case 1:
+                document.getElementById("conName1").style.backgroundColor="#53b39c";
+                document.getElementById("conName2").style.backgroundColor="#ffffff";
+                document.getElementById("conName3").style.backgroundColor="#ffffff";
+                document.getElementById("conName1").style.color="#ffffff";
+                document.getElementById("conName2").style.color="#000000";
+                document.getElementById("conName3").style.color="#000000";
+                break;
+            case 2:
+                document.getElementById("conName2").style.backgroundColor="#53b39c";
+                document.getElementById("conName1").style.backgroundColor="#ffffff";
+                document.getElementById("conName3").style.backgroundColor="#ffffff";
+                document.getElementById("conName2").style.color="#ffffff";
+                document.getElementById("conName1").style.color="#000000";
+                document.getElementById("conName3").style.color="#000000";
+                break;
+            case 3:
+                document.getElementById("conName3").style.backgroundColor="#53b39c";
+                document.getElementById("conName2").style.backgroundColor="#ffffff";
+                document.getElementById("conName1").style.backgroundColor="#ffffff";
+                document.getElementById("conName3").style.color="#ffffff";
+                document.getElementById("conName2").style.color="#000000";
+                document.getElementById("conName1").style.color="#000000";
+                break;
+            default:
+                    eButton=1;
+                    document.getElementById("conName1").style.backgroundColor="#53b39c";
+                    document.getElementById("conName2").style.backgroundColor="#ffffff";
+                    document.getElementById("conName3").style.backgroundColor="#ffffff";
+                    document.getElementById("conName1").style.color="#ffffff";
+                    document.getElementById("conName2").style.color="#000000";
+                    document.getElementById("conName3").style.color="#000000";
+
+            }
+            }
+        else if(cButton==11){
+        iButton++;
+        if(iButton>3){
+        iButton=1;
+        }
+        switch(iButton){
+        case 1:
+        document.getElementById("htmlFile").style.backgroundColor="#  46c3ff";
+        document.getElementById("cssFile").style.backgroundColor="#ffffff";
+        document.getElementById("jsFile").style.backgroundColor="#ffffff";
+        document.getElementById("htmlFile").style.color="#  ffffff";
+        document.getElementById("cssFile").style.color="#  000000";
+        document.getElementById("jsFile").style.color="#  000000";
+        break;
+        case 2:
+        document.getElementById("cssFile").style.backgroundColor="#  46c3ff";
+        document.getElementById("htmlFile").style.backgroundColor="#ffffff";
+        document.getElementById("jsFile").style.backgroundColor="#ffffff";
+        document.getElementById("cssFile").style.color="#  ffffff";
+        document.getElementById("htmlFile").style.color="#  000000";
+        document.getElementById("jsFile").style.color="#  000000";
+        break;
+        case 3:
+        document.getElementById("jsFile").style.backgroundColor="#  46c3ff";
+        document.getElementById("cssFile").style.backgroundColor="#ffffff";
+        document.getElementById("htmlFile").style.backgroundColor="#ffffff";
+        document.getElementById("jsFile").style.color="#  ffffff";
+        document.getElementById("cssFile").style.color="#  000000";
+        document.getElementById("htmlFile").style.color="#  000000";
+        break;
+        default:
+        document.getElementById("htmlFile").style.backgroundColor="#  46c3ff";
+        document.getElementById("cssFile").style.backgroundColor="#ffffff";
+        document.getElementById("jsFile").style.backgroundColor="#ffffff";
+        document.getElementById("htmlFile").style.color="#  ffffff";
+        document.getElementById("cssFile").style.color="#  000000";
+        document.getElementById("jsFile").style.color="#  000000";
+        }
+        }
+
+    }
+    else if(dButton==3){
+        if(cButton==1){
+        fButton++;
+        if(fButton>2){
+            fButton=1;
+            }
+        switch(fButton){
+            case 1:
+                document.getElementById("sName1").style.backgroundColor="#53b39c";
+                document.getElementById("sName2").style.backgroundColor="#ffffff";
+                break;
+            case 2:
+                document.getElementById("sName2").style.backgroundColor="#53b39c";
+                document.getElementById("sName1").style.backgroundColor="#ffffff";
+                break;
+            default:
+                document.getElementById("sName1").style.backgroundColor="#53b39c";
+                document.getElementById("sName2").style.backgroundColor="#ffffff";
+                }
+        }
+    }
+
+}
+function ppp(){
+    urlGo=document.getElementById("urlGo").value;
+    window.location.href=urlGo;
+    }
+
+</script>
