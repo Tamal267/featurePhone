@@ -1,0 +1,232 @@
+.mBody {
+    width: 5cm;
+    height: 12.5cm;
+    background-color: black;
+    border-radius: 10px;
+}
+.mBody .frontSpeaker {
+    transform: translate(2cm, 0.3cm);
+    width: 1cm;
+    height: o.2cm;
+    border: 1px solid #fffbbb;
+    border-radius: 2px;
+}
+.mBody .model {
+    color: #ffffff;
+    transform: translate(3.8cm, 0.5cm);
+    font-size: 0.2cm;
+}
+.mBody #display {
+    transform: translate(0.55cm, 0.5cm);
+    width: 3.8cm;
+    height: 5cm;
+    background-color: #797979;
+}
+.mBody .brand {
+    transform: translate(1.57cm, 0.7cm);
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-weight: bold;
+}
+.mBody .centerButton {
+    transform: translate(1.8cm, 1cm);
+    width: 1.3cm;
+    height: 1.3cm;
+    border-radius: 0.5cm;
+    border: 3px solid #bebebe;
+    box-shadow: 3px 3px #444444, -3px -3px #444444;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+.mBody .button {
+    width: 1cm;
+    height: 0.5cm;
+    border: 1px solid #bebebe;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.sFont {
+    font-size: 5px;
+    color: #ffffff;
+    float: right;
+    margin-right: 3px;
+}
+#status {
+    font-size: 10px;
+    background-color: #ffffff;
+    visibility: hidden;
+}
+#urlGo {
+    transform: translate(0px, 25px);
+    width: 140px;
+    border-radius: 10px;
+    outline: 0px;
+    display: none;
+    background-color: #aff;
+}
+#display #gallary1,
+#gallary2,
+#gallary3,
+#gallary4,
+#gallary5 {
+    display: none;
+    width: 140px;
+    height: 140px;
+    transform: translate(0px, 25px);
+    border-radius: 10px;
+    border: 2px solid #adf;
+}
+#display #calender1,
+#calender2,
+#calender3,
+#calender4,
+#calender5,
+#calender6,
+#calender7,
+#calender8,
+#calender9,
+#calender10,
+#calender11,
+#calender12 {
+    width: 140px;
+    height: 140px;
+    transform: translate(0px, 25px);
+    display: none;
+}
+#display #about {
+    transform: translate(0px, 25px);
+    display: none;
+    position: absolute;
+    width: 140px;
+    word-wrap: break-word;
+    color: black;
+    font-size: 13px;
+    text-align: center;
+}
+#about .syedTamal {
+    font-family: Georgia, Times New Roman;
+    font-weight: bold;
+    animation: sTamal 5s linear infinite;
+}
+@keyframes sTamal {
+    0% {
+        color: red;
+    }
+    30% {
+        color: green;
+    }
+    60% {
+        color: yellow;
+    }
+    80% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+#emailForm {
+    transform: translate(0px, 25px);
+    display: none;
+}
+#status #img {
+    width: 12px;
+    height: 12px;
+}
+#appAll {
+    display: none;
+}
+
+#app img {
+    width: 18px;
+    height: 18px;
+    border: 2px solid green;
+    border-radius: 9px;
+}
+#display #appName {
+    color: black;
+    translate: (0px, 5px);
+    position: absolute;
+    display: none;
+    font-family: Fantasy;
+    background-color: #ff8f8f;
+    width: 100%;
+    text-align: center;
+}
+#selectName {
+    display: none;
+    transform: translate(0px, 25px);
+    width: 100%;
+}
+#display #fF {
+    font-size: 12px;
+    transform: translate(0px, 25px);
+    display: none;
+}
+#fF #resultX {
+    width: 140px;
+    background-color: #ffffff;
+    height: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+    color: #000000;
+    background-color: #b4abab;
+}
+#fA,
+#fB,
+#fC {
+    width: 140px;
+    background-color: #b4abab;
+}
+#display #convertName {
+    transform: translate(0px, 25px);
+    display: none;
+    width: 100%;
+}
+#display #sourceCode {
+    transform: translate(0px, 25px);
+    display: none;
+    width: 100%;
+}
+#display .conName {
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#clock {
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 1.5cm;
+    left: 1.3cm;
+}
+#date {
+    font-size: 10px;
+    color: #ffffff;
+    position: absolute;
+    top: 2cm;
+    left: 1.4cm;
+}
+#phoneNumber {
+    transform: translate(0, 3.3cm);
+    color: black;
+    font-family: Times New Roman;
+    float: right;
+    font-size: 20px;
+    text-wrap: break-word;
+}
+#table {
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    border-top: 1px solid #edd;
+    transform: translate(0, 4.1cm);
+    visibility: hidden;
+    text-shadow: 0.5px 0.5px black, -0.5px -0.5px black;
+}
